@@ -16,7 +16,6 @@ const transactionsRouter = Router();
 const upload = multer(uploadConfig);
 
 transactionsRouter.get('/', async (request, response) => {
-  // TODO
   const transactionsRepository = await getCustomRepository(
     TransactionsRepository,
   );

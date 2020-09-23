@@ -49,33 +49,6 @@ class CreateTransactionService {
     await transactionsRepository.save(transaction);
 
     return transaction;
-    // const categoryRepository = getRepository(Category);
-
-    // let existingCategory = await categoryRepository.findOne({
-    //   where: {
-    //     title: category,
-    //   },
-    // });
-
-    // if (!existingCategory) {
-    //   const newCategory = await categoryRepository.create({
-    //     title: category,
-    //   });
-    //   existingCategory = await categoryRepository.save(newCategory);
-    // }
-
-    // const transaction = await transactionsRepository.create({
-    //   title,
-    //   type,
-    //   value,
-    //   category_id: existingCategory.id,
-    // });
-
-    // await transactionsRepository.save(transaction);
-
-    // console.log(existingCategory, transaction);
-
-    // return transaction;
   }
 }
 
